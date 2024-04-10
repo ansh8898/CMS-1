@@ -34,11 +34,3 @@ jobs:
           git config --global user.name "ansh8898"
           git config --global user.email "jaatanshul2209@gmail.com"
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.MY_CUSTOM_TOKEN }}
-          publish_dir: ./public
-          publish_branch: gh-pages
-          force_orphan: true
-          commit_message: 'Deploy $GITHUB_SHA to gh-pages branch'
