@@ -26,4 +26,15 @@ jobs:
         run: |
           # No build steps needed for frontend-only project
 
-     
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages
+          force_orphan: true
+          commit_message: 'Deploy $GITHUB_SHA to gh-pages branch'
+
+      - name: Test
+        run: |
+          # Hi, Welcome to the Front-end created by Anshul Choudhary
