@@ -34,3 +34,5 @@ jobs:
           publish_branch: gh-pages
           force_orphan: true
           commit_message: 'Deploy $GITHUB_SHA to gh-pages branch'
+          user_name: 'ansh8898'
+          user_email: 'jaatanshul2209@gmail.com'
