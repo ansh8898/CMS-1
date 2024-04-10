@@ -29,7 +29,7 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.MY_CUSTOM_TOKEN }}
           publish_dir: ./public
           publish_branch: gh-pages
           force_orphan: true
@@ -37,4 +37,4 @@ jobs:
 
       - name: Test
         run: |
-          # Hi, Welcome to the Front-end created by Anshul Choudhary
+          # Add your frontend tests here
