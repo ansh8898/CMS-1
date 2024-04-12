@@ -18,14 +18,6 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install dependencies
-        run: |
-          # No to install for frontend-only project
-
-      - name: Build
-        run: |
-          # No build steps needed for frontend-only project
-
   deploy:
     runs-on: ubuntu-latest
     steps:
