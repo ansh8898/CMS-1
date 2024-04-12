@@ -1,4 +1,4 @@
-name: Build and Test
+name: Build and Deploy
 
 on:
   push:
@@ -26,28 +26,6 @@ jobs:
         run: |
           # No build steps needed for frontend-only project
 
-  test:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Use Node.js 20
-        uses: actions/setup-node@v2
-        with:
-          node-version: '20'
-
-      - name: Install dependencies
-        run: |
-          # Install dependencies for testing
-          npm install
-
-      - name: Run tests
-        run: |
-          # Run your tests here
-          npm test
-
   deploy:
     runs-on: ubuntu-latest
     steps:
@@ -55,3 +33,5 @@ jobs:
         run: |
           git config --global user.name "ansh8898"
           git config --global user.email "jaatanshul2209@gmail.com"
+
+      
