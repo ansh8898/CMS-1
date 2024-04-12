@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Build
 
 on:
   push:
@@ -18,12 +18,10 @@ jobs:
         with:
           node-version: '20'
 
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Setup Git
+      - name: Install dependencies
         run: |
-          git config --global user.name "ansh8898"
-          git config --global user.email "jaatanshul2209@gmail.com"
+          # No need to install for frontend-only project
 
-      
+      - name: Build
+        run: |
+          # No build steps needed for frontend-only project
