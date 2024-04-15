@@ -1,0 +1,12 @@
+{
+  "name": "contact-management-system",
+  "version": "1.0.0",
+  "description": "A simple Contact Management System",
+  "main": "index.js",
+  "scripts": {
+    "start": "script.js"
+  },
+  "author": "Anshul Choudhary",
+  "license": "MIT",
+  "dependencies": {}
+}
