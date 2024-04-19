@@ -20,8 +20,6 @@ jobs:
 
       - name: Install dependencies
         run: |
-          # No need to install for frontend-only project
 
       - name: Build
         run: |
-          # No build steps needed for frontend-only project
